@@ -1,9 +1,12 @@
 import flask
+from math import sin, cos, sqrt, atan2, radians
 from flask_pymongo import PyMongo
 from pymongo import MongoClient
 import time
 from flask import Flask, request, jsonify, render_template, Response, redirect, url_for
 import json
+from geopy import distance
+from geopy import Point
 
 #mongodb+srv://eugenetan:<password>@backend-serv.wnkwk.gcp.mongozdb.net/<dbname>?retryWrites=true&w=majority
 
@@ -15,13 +18,18 @@ mongo = PyMongo(app)
 db = mongo.db
 col = mongo.db['server-gsd']
 print ("MongoDB Database:", mongo.db)
-#print ("MondoDB Collection:", col)
+
+
+def distance_from(point1: Point, point2: Point):
+    result = distance.distance(point1, point2).ft
+    print(result)
+    return result
 
 @app.route("/", methods=['POST'])
 def dinput():
-
     data = request.get_json()
     x = col.insert_one(data)
+    
     return 'Wow!'
 
 @app.route("/distance", methods=['GET', 'POST'])
