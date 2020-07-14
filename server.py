@@ -25,12 +25,26 @@ def distance_from(point1: Point, point2: Point):
     print(result)
     return result
 
-@app.route("/", methods=['POST'])
+def proximity_check(point1: Point, point2: Point):
+    distance = distance_from(point1, point2)
+    if distance <= 50:
+        return True
+    else:
+        return False
+
+@app.route("/", methods=['GET','POST'])
 def dinput():
     data = request.get_json()
+    latitude = (float)(data['Latitude'])
+    print(latitude)
+    longitude = (float)(data['Longitude'])
+    print(longitude)
+    item = Point(latitude, longitude)
+    hardpoint = Point(44.045520, -123.079846)
+    value = proximity_check(item, hardpoint)
     x = col.insert_one(data)
     
-    return 'Wow!'
+    return str(value)
 
 @app.route("/distance", methods=['GET', 'POST'])
 def dcalc():
