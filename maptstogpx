@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="mapstogpx.com" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd">
+  <metadata>
+    <link href="http://www.mapstogpx.com">
+      <text>Sverrir Sigmundarson</text>
+    </link>
+    <!--desc>Map data ©2020 Google</desc-->
+    <!--copyright author="Google Inc">
+    	<year>2020</year>
+    	<license>https://developers.google.com/maps/terms</license>
+    </copyright-->
+    <!--url>https://www.google.co.uk/maps/dir/799-701 E 13th Ave, Eugene, OR 97401/44.045527,-123.0775328/@44.0453333,-123.0785057,18.75z/data=!4m9!4m8!1m5!1m1!1s0x54c11e3ec0e15cff:0x9379c936528f817f!2m2!1d-123.0811385!2d44.0455247!1m0!3e2?hl=en</url-->
+    <time>2020-07-14T09:06:18Z</time>
+  </metadata>
+  <wpt lat="44.0455247" lon="-123.0811385">
+    <name>799-701 E 13th Ave</name>
+    <desc>799-701 E 13th Ave, Eugene, OR 97401, USA</desc>
+  </wpt>
+  <wpt lat="44.045527" lon="-123.0775328">
+    <name>Eugene</name>
+    <desc>965-955 E 13th Ave, Eugene, OR 97403, USA</desc>
+  </wpt>
+<trk>
+  <name>799-701 E 13th Ave to Eugene</name>
+  <number>1</number>
+  <trkseg>
+  <trkpt lat="44.0455246" lon="-123.0811385">
+    <name>TP001</name>
+  </trkpt>
+  <trkpt lat="44.0455246" lon="-123.0811385">
+    <name>TP002</name>
+  </trkpt>
+  <trkpt lat="44.0455246" lon="-123.0811385">
+    <name>TP003</name>
+  </trkpt>
+  <trkpt lat="44.04552" lon="-123.08017">
+    <name>TP004</name>
+  </trkpt>
+  <trkpt lat="44.04552" lon="-123.07971">
+    <name>TP005</name>
+  </trkpt>
+  <trkpt lat="44.04552" lon="-123.07864">
+    <name>TP006</name>
+  </trkpt>
+  <trkpt lat="44.04551" lon="-123.07785">
+    <name>TP007</name>
+  </trkpt>
+  <trkpt lat="44.04551" lon="-123.07753">
+    <name>TP008</name>
+  </trkpt>
+  <trkpt lat="44.0455082" lon="-123.0775332">
+    <name>TP009</name>
+  </trkpt>
+  </trkseg>
+</trk>
+</gpx>
